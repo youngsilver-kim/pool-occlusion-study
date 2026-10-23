@@ -1,0 +1,14 @@
+{
+  "name": "pilot_cifar100_not_for_paper",
+  "dataset": "cifar100",
+  "epochs": 10,
+  "seeds": [13],
+  "methods": ["attention", "attention_entropy", "attention_floor"],
+  "areas": [0.25],
+  "repeats": 1,
+  "noise_sigmas": [0.08],
+  "profile_warmup": 5,
+  "profile_steps": 10,
+  "profile_trials": 2,
+  "device": "mps"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "confirm_cifar10_r20",
+  "dataset": "cifar10",
+  "backbone": "resnet20",
+  "epochs": 80,
+  "seeds": [13, 42, 2026],
+  "methods": ["attention", "attention_entropy", "attention_floor", "mixed_attention"],
+  "device": "mps"
+}

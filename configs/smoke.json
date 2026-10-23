@@ -1,0 +1,21 @@
+{
+  "name": "smoke_SYNTHETIC_NOT_FOR_PAPER",
+  "dataset": "cifar10",
+  "synthetic": true,
+  "epochs": 2,
+  "seeds": [13],
+  "batch_size": 32,
+  "eval_batch_size": 32,
+  "warmup_epochs": 1,
+  "lr": 0.01,
+  "areas": [0.25],
+  "repeats": 1,
+  "noise_sigmas": [0.08],
+  "profile_warmup": 2,
+  "profile_steps": 3,
+  "profile_trials": 2,
+  "qualitative_ids": [0, 1, 2],
+  "synthetic_train_per_class": 8,
+  "synthetic_test_per_class": 3,
+  "device": "auto"
+}

@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.cache/
+data/
+outputs/
+*.pt
+*.npz
+*.csv.gz
+.DS_Store
+requirements.installed.txt

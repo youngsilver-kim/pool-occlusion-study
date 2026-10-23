@@ -1,0 +1,7 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {"name": "Smoke check (synthetic)", "type": "debugpy", "request": "launch", "program": "${workspaceFolder}/study.py", "args": ["all", "--config", "configs/smoke.json"], "console": "integratedTerminal"},
+    {"name": "Main research suite", "type": "debugpy", "request": "launch", "program": "${workspaceFolder}/study.py", "args": ["all", "--config", "configs/main.json"], "console": "integratedTerminal"}
+  ]
+}

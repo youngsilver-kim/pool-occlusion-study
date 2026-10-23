@@ -1,0 +1,25 @@
+1. VS Code에서 이 pool-occlusion-study 폴더 자체를 열어 주세요.
+2. 새 터미널에서 아래 명령을 순서대로 실행해 주세요.
+
+bash setup_macos.sh
+source .venv/bin/activate
+python study.py doctor
+python -m pytest -q tests
+python study.py all --config configs/smoke.json
+python study.py download --config configs/main.json
+python study.py benchmark --config configs/main.json --batches 30
+
+시간 측정 결과를 확인한 다음 본 실험을 시작합니다.
+
+bash run_main.sh
+
+중단 후 동일한 명령을 실행하면 마지막 저장 epoch부터 재개합니다.
+기본 본 실험은 7개 방법 × 5개 시드 × 80 epoch입니다.
+최종 결과 폴더는 outputs/main_cifar100_r20/입니다.
+
+README_KO.md: 설치, 실행, 파일 설명, 문제 해결
+RESEARCH_PLAN_KO.md: 추천 주제, 기존 논문과 연결, 가설, 논문 구성, 참고문헌
+VALIDATION.md: 실제로 검증한 범위와 아직 검증하지 않은 범위
+
+smoke는 합성 데이터 실행 점검이며 논문 결과로 사용하시면 안 됩니다.
+코드는 실험 체계를 제공합니다. 실제 성능 향상이나 논문 채택을 보장하지 않습니다.

@@ -1,0 +1,11 @@
+{
+  "name": "training_occlusion_control_cifar100",
+  "dataset": "cifar100",
+  "backbone": "resnet20",
+  "epochs": 80,
+  "seeds": [13, 42, 2026],
+  "methods": ["attention", "attention_entropy", "attention_floor"],
+  "train_occlusion_probability": 0.5,
+  "train_occlusion_area": 0.25,
+  "device": "mps"
+}
